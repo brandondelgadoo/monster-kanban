@@ -48,43 +48,43 @@ return (
     <div className="grid grid-cols-1 md:grid-cols-4 gap-4 w-full max-w-6xl">
     <Column
         title="Backlog"
-        color="bg-rose-200"
+        color="bg-gray-200"
         tasks={boards.backlog}
         onMove={moveTask}
         onAdd={addTask}
         onRemove={removeTask}
         name="backlog"
-        monster={{ color: "bg-red-500", height: "h-16" }}
+        monster={{ color: "bg-gray-500", height: "h-16" }}
     />
     <Column
         title="Doing"
-        color="bg-amber-200"
+        color="bg-gray-200"
         tasks={boards.doing}
         onMove={moveTask}
         onAdd={addTask}
         onRemove={removeTask}
         name="doing"
-        monster={{ color: "bg-orange-500", height: "h-16" }}
+        monster={{ color: "bg-gray-500", height: "h-16" }}
     />
     <Column
         title="Review"
-        color="bg-green-200"
+        color="bg-gray-200"
         tasks={boards.review}
         onMove={moveTask}
         onAdd={addTask}
         onRemove={removeTask}
         name="review"
-        monster={{ color: "bg-green-600", height: "h-16" }}
+        monster={{ color: "bg-gray-500", height: "h-16" }}
     />
     <Column
         title="Done"
-        color="bg-sky-200"
+        color="bg-gray-200"
         tasks={boards.done}
         onMove={moveTask}
         onAdd={addTask}
         onRemove={removeTask}
         name="done"
-        monster={{ color: "bg-blue-500", height: "h-16" }}
+        monster={{ color: "bg-gray-500", height: "h-16" }}
     />
     </div>
 );
