@@ -63,7 +63,12 @@ export default function Monster({ color, height = "h-24" }) {
             className="absolute w-2 h-2 bg-black rounded-full top-1.5 left-1.5 transition-transform duration-75 ease-linear"
           />
         </div>
+        {/* Eyebrows */}
+        <div className={`absolute bottom-${height} bg-black rounded size-1 w-5 rotate-30`} /> {/* Left */}
+        <div className={`absolute right-5 bottom-${height} bg-black rounded size-1 w-5`} /> {/* Right */}
       </div>
+      {/* Mouth */}
+      <div className={`absolute bottom-3 bg-black rounded size-1 w-10`} />
     </div>
   );
 }
